@@ -1,0 +1,37 @@
+/* Botón que cambia de color al pasar el cursor */
+.boton {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.boton:hover {
+    background-color: #2ecc71;
+}
+
+/* Cuadro que rebota */
+.caja {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    position: relative;
+    animation: rebotar 0.5s infinite alternate ease-in-out;
+}
+@keyframes rebotar {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-100px); }
+}
+
+/* Texto que se desvanece */
+.texto {
+    font-size: 20px;
+    font-weight: bold;
+    animation: desvanecer 3s forwards;
+}
+@keyframes desvanecer {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
